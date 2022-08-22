@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cl5QcwE056gWYLRW/sKUsd2beDhDqUjKN9WpP3Dywms=",
+  "Source": "NetCoreFinancialWeb",
+  "BasePath": "_content/NetCoreFinancialWeb",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
