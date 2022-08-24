@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Senati\\NetCoreFinancialWeb\\NetCoreFinancialWeb\\NetCoreFinancialWeb.csproj": {}
+    "/home/joel/Documents/senati-projects/dot-net-core-financial/NetCoreFinancialWeb/NetCoreFinancialWeb.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Senati\\NetCoreFinancialWeb\\NetCoreFinancialWeb\\NetCoreFinancialWeb.csproj": {
+    "/home/joel/Documents/senati-projects/dot-net-core-financial/NetCoreFinancialWeb/NetCoreFinancialWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Senati\\NetCoreFinancialWeb\\NetCoreFinancialWeb\\NetCoreFinancialWeb.csproj",
+        "projectUniqueName": "/home/joel/Documents/senati-projects/dot-net-core-financial/NetCoreFinancialWeb/NetCoreFinancialWeb.csproj",
         "projectName": "NetCoreFinancialWeb",
-        "projectPath": "D:\\Projects\\Senati\\NetCoreFinancialWeb\\NetCoreFinancialWeb\\NetCoreFinancialWeb.csproj",
-        "packagesPath": "C:\\Users\\cayet\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Senati\\NetCoreFinancialWeb\\NetCoreFinancialWeb\\obj\\",
+        "projectPath": "/home/joel/Documents/senati-projects/dot-net-core-financial/NetCoreFinancialWeb/NetCoreFinancialWeb.csproj",
+        "packagesPath": "/home/joel/.nuget/packages/",
+        "outputPath": "/home/joel/Documents/senati-projects/dot-net-core-financial/NetCoreFinancialWeb/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\cayet\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/joel/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.8, )"
@@ -88,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
         }
       }
     }

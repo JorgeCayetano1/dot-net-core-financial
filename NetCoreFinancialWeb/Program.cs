@@ -4,6 +4,7 @@ using NetCoreFinancialWeb.Data;
 
 
 var builder = WebApplication.CreateBuilder(args);
+// var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 
 builder.Services.AddDbContext<NetCoreFinancialWebContext>(options =>
@@ -18,6 +19,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//services cors
+builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
+{
+    builder.WithOrigins("http://localhost:8082", "http://192.168.1.74:8082");
+}));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -26,6 +33,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("corsapp");
 
 app.UseHttpsRedirection();
 
