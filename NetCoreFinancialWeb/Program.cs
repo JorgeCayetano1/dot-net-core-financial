@@ -22,7 +22,7 @@ builder.Services.AddSwaggerGen();
 //services cors
 builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
 {
-    builder.WithOrigins("http://localhost:8082", "http://192.168.1.74:8082");
+    builder.WithOrigins("http://localhost:8080", "http://192.168.1.74:8080");
 }));
 
 var app = builder.Build();

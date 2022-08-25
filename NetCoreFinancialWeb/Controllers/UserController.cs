@@ -55,7 +55,7 @@ namespace NetCoreFinancialWeb.Controllers
         // PUT: api/User/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut]
-        [Route("save-user/{id}")]
+        [Route("edit-user/{id}")]
         public async Task<IActionResult> PutUsers(int id, Users users)
         {
             if (id != users.id)
@@ -87,7 +87,7 @@ namespace NetCoreFinancialWeb.Controllers
         // POST: api/User
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        [Route("edit-user")]
+        [Route("save-user")]
         public async Task<ActionResult<Users>> PostUsers(Users users)
         {
             if (_context.Users == null)
